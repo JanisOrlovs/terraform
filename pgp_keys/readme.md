@@ -35,6 +35,6 @@ variable "pgp_key" {
 Run apply
 
 Then decrypt key
-
+```javascript
 terraform output encrypted_variable | base64 -D | gpg -r test-key
-
+```
